@@ -22,5 +22,9 @@ void main() {
       expect(detectTriangle(1, 2, 2), "Segitiga Sama Kaki");
       expect(detectTriangle(4, 1, 4), "Segitiga Sama Kaki");
     });
+
+    test('Should return "Segitiga Sembarang" when no sides are equal', () {
+      expect(detectTriangle(1, 2, 3), "Segitiga Sembarang");
+    });
   });
 }

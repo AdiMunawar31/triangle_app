@@ -1,4 +1,4 @@
-detectTriangle(num sideA, num sideB, num sideC) {
+String detectTriangle(num sideA, num sideB, num sideC) {
   final sides = [sideA, sideB, sideC];
   sides.sort();
 
@@ -15,4 +15,6 @@ detectTriangle(num sideA, num sideB, num sideC) {
   if (sides[0] == sides[1] || sides[1] == sides[2]) {
     return "Segitiga Sama Kaki";
   }
+
+  return "Segitiga Sembarang";
 }
