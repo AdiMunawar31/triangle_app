@@ -6,4 +6,8 @@ detectTriangle(num sideA, num sideB, num sideC) {
       throw Exception();
     }
   }
+
+  if (sides[0] == sides[1] && sides[0] == sides[2]) {
+    return "Segitiga sama sisi";
+  }
 }
