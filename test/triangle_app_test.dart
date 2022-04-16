@@ -15,5 +15,12 @@ void main() {
       expect(detectTriangle(1, 1, 1), "Segitiga sama sisi");
       expect(detectTriangle(1, 1, 2), isNot("Segitiga sama sisi"));
     });
+
+    test('Should return "Segitiga Sama Kaki" when only two sides are equal', () {
+      expect(detectTriangle(1, 1, 2), "Segitiga Sama Kaki");
+      expect(detectTriangle(1, 2, 1), "Segitiga Sama Kaki");
+      expect(detectTriangle(1, 2, 2), "Segitiga Sama Kaki");
+      expect(detectTriangle(4, 1, 4), "Segitiga Sama Kaki");
+    });
   });
 }
