@@ -1,4 +1,4 @@
-# triangle_app1
+# triangle_app
 
 A new Flutter project.
 
